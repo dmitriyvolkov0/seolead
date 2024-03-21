@@ -1,0 +1,416 @@
+// p.s bootstrap сетку не использовал, т.к стоит нестандартный контейнер, но отказаться от подлючения bootsrap не можем, потому что в нем имеются другие функции, которые будут полезны
+@import 'fonts'
+@import 'settings'
+
+//========== common ==========
+body, h1, h2, h3, h4, h5, h6, p, span, input, textarea, a, button
+    font-family: calibri
+
+// container
+.main-container
+    width: 1280px
+    max-width: 100%
+    padding: 0 15px
+    margin: 0 auto
+
+// arrows
+.slick-arrows
+    position: relative
+    background: none
+    border: none
+    outline: none
+    img
+        width: 35px
+        height: 68px
+.left-arrow
+    left: -10px
+.right-arrow
+    right: -10px
+    
+// dots
+.slick-dots
+    display: flex
+    padding: 0
+    justify-content: center
+    font-size: 0
+    list-style: none
+    margin-top: 15px
+    button
+        width: 8px
+        height: 8px
+        margin: 0 5px
+        padding: 0
+        border: none
+        background: #888
+        border-radius: 100%
+    .slick-active
+        button
+            background: #000
+
+//========== header ==========
+.header
+    background: url('../img/header/bg.webp') center center no-repeat
+    background-size: cover
+    width: 100%
+    height: 820px
+    color: #fff
+    &__offer
+        display: block
+        margin-left: auto
+        margin-right: -160px
+        width: 640px
+        padding: 60px 50px
+        background: rgb(0,63,123)
+        background: linear-gradient(56deg, rgba(0,63,123,1) 0%, rgba(2,115,189,0.9) 100%)
+    &__title
+        line-height: 80px
+        margin-bottom: 40px
+    &__description
+        margin-bottom: 55px
+    .site-inp
+        margin-bottom: 29px
+    .phone-inp
+        margin-bottom: 35px
+
+//========== need ==========
+.need
+    margin-top: 90px
+    &__title
+        margin-bottom: 59px
+    &__block
+        display: flex
+    &__step
+        display: flex
+        justify-content: left
+        align-items: start
+    .step-img
+        width: 40px
+        height: 40px
+    .line
+        display: block
+        height: 78px
+        width: 2px
+        margin: 20px auto
+        background: #dbe3e5
+    .step-title
+        margin-bottom: 30px
+        line-height: 35px
+    .step-description
+        max-width: 742px
+        width: 100%
+        line-height: 30px
+    .step-sec
+        padding-left: 24px
+    &__figure
+        display: block
+        margin-left: auto
+        width: 396px
+        height: 434px
+        transition: .2s
+        &:hover
+            transform: scale(1.05)
+
+//========== what is ==========
+.what-is
+    margin-top: 100px
+    &__title
+        margin-bottom: 45px
+    &__subtitle-sec
+        display: flex
+        align-items: center
+        justify-content: start
+        margin-bottom: 45px
+    .icon
+        width: 45px
+        height: 48px
+    &__subtitle
+        padding-left: 20px
+    &__text
+        max-width: 1185px
+        p
+            margin-bottom: 50px
+
+//========== steps ==========
+.steps
+    margin-top: 100px
+    &__items
+        display: flex !important
+        align-items: center
+        margin: 0 auto
+        margin-top: 90px
+    &__img
+        display: block
+        margin: 0 auto
+        width: 341px
+        height: 229px
+        margin-bottom: 25px
+        transition: .2s
+        &:hover
+            transform: scale(1.05)
+    &__subtitle
+        text-align: center
+        margin-bottom: 20px
+    &__description
+        text-align: center
+        margin-bottom: 30px
+    &__num
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto
+        border-radius: 100%
+        width: 90px
+        height: 90px
+        color: #fff
+        background: rgb(0,63,123)
+        background: linear-gradient(56deg, rgba(0,63,123,1) 0%, rgba(2,115,189,0.9) 100%)
+    .second-item
+        .steps__description
+            margin-left: auto
+            margin-right: auto
+            max-width: 315px
+
+
+// ========== feedback ==========
+.feedback
+    color: #fff
+    margin-top: 130px
+    background: url('../img/feedback/bg.webp') center center no-repeat
+    background-size: cover
+    .main-container
+        display: flex
+    &__img
+        margin-top: -40px
+        width: 335px
+        height: 573px
+        transition: .2s
+    &__form
+        margin-left: 35px
+    &__title
+        padding-top: 50px
+        margin-bottom: 30px
+    .inp-1
+        margin-bottom: 25px
+
+// ========== sanctions ==========
+.sanctions
+    margin-top: 100px
+    &__title
+        max-width: 940px
+        margin-bottom: 30px
+    &__subtitle
+        margin-bottom: 50px
+    &__items
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        column-gap: 30px
+        row-gap: 40px
+    &__item
+        position: relative
+        background: #f5f5f5
+        height: 100%
+        border-radius: 10px
+        padding: 60px 40px 30px 38px
+        transition: .2s
+        &:hover
+            transform: scale(1.05)
+    &__num
+        position: absolute
+        top: -45px
+        left: 38px
+        display: block
+        width: fit-content
+        height: fit-content
+        background: linear-gradient(56deg, rgba(0,63,123,1) 0%, rgba(2,115,189,0.9) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &__description
+        font-weight: 700
+    
+// ========== offer ==========
+.offer
+    background: url('../img/offer/bg.webp') center center no-repeat
+    background-size: cover
+    width: 100%
+    margin-top: 90px
+    padding-top: 70px
+    padding-bottom: 80px
+    color: #fff
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__item
+        transition: .2s
+        &:hover
+            transform: scale(1.02)
+    &__img
+        display: block
+        margin: 0 auto
+        width: 154px
+        height: 154px
+        transition: .2s
+    &__line
+        width: 70px
+        height: 2px
+        background: #fff
+        margin: 35px auto
+    &__subtitle
+        text-align: center
+        max-width: 250px
+        margin: 0 auto
+    &__but
+        margin: 80px auto 0 auto
+    
+    .slick-dots
+        button
+            width: 8px
+            height: 8px
+            margin: 0 5px
+            padding: 0
+            border: none
+            background: #fff
+            border-radius: 100%
+        .slick-active
+            button
+                background: rgb(2,115,189)
+                border: 2px solid #fff
+
+// ========== nuance ==========
+.nuance
+    margin-top: 130px
+    &__title
+        margin-bottom: 60px
+    &__subtitle-sec
+        display: flex
+        align-items: start
+        justify-content: start
+        margin-bottom: 45px
+    .icon
+        width: 45px
+        height: 48px
+    &__subtitle
+        padding-left: 20px
+        max-width: 900px
+    &__container
+        display: flex
+    &__text
+        &::-webkit-scrollbar
+            width: 14px
+
+        &::-webkit-scrollbar-thumb
+            width: 10px
+            background: #0a71b6
+            border-radius: 20px
+
+        &::-webkit-scrollbar-track
+            background: #fff
+            border-radius: 20px
+            box-shadow: inset 0 0 0 3px #f0f0f0
+        p
+            margin-bottom: 50px
+
+// ========== advantages ==========
+.advantages
+    margin-top: 95px
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__slider
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__item
+        transition: .2s
+        &:hover
+            transform: scale(1.05)
+    &__img
+        max-width: 324px
+        max-height: 223px
+        margin: 0 auto
+        margin-top: 10px
+    &__subtitle
+        max-width: 270px
+        text-align: center
+        margin: 0 auto
+
+// ========== price ==========
+.price
+    margin-top: 100px
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__slider
+        display: flex !important
+        justify-content: space-around
+        align-items: start
+    &__item
+        transition: .2s
+        &:hover
+            transform: scale(1.03)
+    &__img,
+    &__line
+        display: block
+        margin: 0 auto
+    &__img
+        width: 256px
+        height: 250px
+    &__line
+        margin: 48px auto 38px auto
+        width: 65px
+        height: 2px
+    &__subtitle
+        text-align: center
+        margin: 0 auto
+    &__description
+        max-width: 430px
+        text-align: center
+        margin: 0 auto
+        margin-top: 30px
+    .first-t
+        max-width: 430px
+    .second-t
+        max-width: 503px
+    &__but
+        margin: 0 auto
+        margin-top: 45px
+
+//========== plan ==========
+.plan
+    margin-top: 100px
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__accordeon-item
+        position: relative
+        border-bottom: 1px solid #ccc
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+    &__header-title
+        margin: 25px 0
+    #accordeon-but
+        padding: 0
+        outline: none
+        border: none
+        background: url('../img/plan/arrow.webp') center center no-repeat
+        width: 31px
+        height: 19px
+    &__content
+        padding-bottom: 40px
+        background: url('../img/plan/img.webp') right top no-repeat
+        ul
+            max-width: 805px
+            li
+                color: #555ffb
+                span
+                    color: #000
+    &__img
+        right: 0
+        top: 0
+    &__but
+        max-width: 400px
+        margin: 0 auto
+        margin-top: 90px
+        

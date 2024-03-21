@@ -1,0 +1,245 @@
+// colors
+.cl-blue
+    color: #005f9e
+
+
+// titles and descriptions
+.h120
+    font-size: 120px
+    font-weight: 700
+    line-height: 104px
+.h90
+    font-size: 90px
+    font-weight: 700
+.h72
+    font-size: 72px
+    font-weight: 700
+.h60
+    font-size: 60px
+    font-weight: 700
+.h42
+    font-size: 42px
+    font-weight: normal
+.h40
+    font-size: 40px
+    font-weight: normal
+.h36
+    font-size: 36px
+    font-weight: normal
+.h30
+    font-size: 30px
+    font-weight: normal
+.h26
+    font-size: 26px
+    font-weight: normal
+.h24
+    font-size: 24px
+    font-weight: normal
+.h22
+    font-size: 22px
+    font-weight: normal
+.h20
+    font-size: 20px
+    font-weight: normal
+
+// inputs
+.inp-1
+    max-width: 464px
+    height: 58px
+    width: 100%
+    padding: 13px 30px 13px 75px
+    outline: none
+    font-size: 24px
+    background: none
+    border-radius: 29px
+    border: 2px solid #fff
+    color: #fff
+    &::placeholder
+        color: #fff
+.site-inp
+    background: url('../img/site.webp') left center no-repeat
+    background-position-x: 30px 
+.phone-inp
+    background: url('../img/phone.webp') left center no-repeat
+    background-position-x: 30px 
+
+// buttons
+.but-1, .but-2
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    border-radius: 34px
+    text-transform: uppercase
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 20px
+    background: none
+    height: 68px
+    transition: .2s
+    &:hover
+        color: #999
+        transform: scale(1.05)
+.but-1
+    max-width: 405px
+    width: 100%
+    border: 2px solid #fff
+    color: #fff
+
+.but-2
+    position: relative
+    width: 100%
+    max-width: 314px
+    color: #000
+    background: #fff
+    text-align: center
+    border: none
+    &::before
+        content: ""
+        position: absolute
+        top: -2px
+        bottom: -2px
+        left: -2px
+        right: -2px
+        background: linear-gradient(56deg, rgba(0,63,123,1) 0%, rgba(2,115,189,0.9) 100%)
+        border-radius: 38px
+        z-index: -1
+
+// spoiler
+.spoiler
+    &__header
+        cursor: pointer
+    &__content
+        display: none
+        p
+            padding-top: 20px
+        
+    img
+        width: 20px
+        height: 19px
+    span
+        padding-left: 13px
+        text-decoration: underline
+
+
+@media screen and ( max-width: 1024px )
+    // titles and descriptions
+    .h120
+        font-size: 80px
+        line-height: 75px
+    .h90
+        font-size: 70px
+    .h72
+        font-size: 72px
+    .h60
+        font-size: 50px
+    .h42
+        font-size: 36px
+    // .h40
+    //     font-size: 40px
+    .h36
+        font-size: 30px
+    .h30
+        font-size: 26px
+    .h26
+        font-size: 22px
+    .h24
+        font-size: 20px
+    .h22
+        font-size: 20px
+    .h20
+        font-size: 16px
+
+    .inp-1
+        font-size: 18px
+    .but-1, .but-2
+        height: 60px
+        font-size: 18px
+
+@media screen and ( max-width: 575px )
+    // titles and descriptions
+    .h120
+        font-size: 60px
+        line-height: 60px
+    .h90
+        font-size: 50px
+    .h60
+        font-size: 40px
+    .h42
+        font-size: 30px
+    .h36
+        font-size: 28px
+    .h30
+        font-size: 22px
+    .h26
+        font-size: 18px
+    .h24
+        font-size: 16px
+    .h22
+        font-size: 18px
+    .h20
+        font-size: 16px
+
+    // inputs
+    .inp-1
+        font-size: 16px
+        height: 50px
+        background-size: 25px
+        padding-left: 65px
+
+    // buttons
+    .but-1
+        font-size: 14px
+        padding: 0
+    .but-2
+        font-size: 16px
+
+    // spoiler
+    .spoiler
+        span
+            padding-left: 5px
+            font-size: 16px
+
+@media screen and ( max-width: 380px )
+    .h120
+        font-size: 40px
+        line-height: 40px
+
+
+
+
+
+// ========================== verical media ==========================
+@media screen and ( max-height: 900px ) and (min-width: 575px) and (max-width: 1600px)
+    // titles and descriptions
+    .h120
+        font-size: 80px
+        line-height: 75px
+    .h90
+        font-size: 70px
+    .h72
+        font-size: 72px
+    .h60
+        font-size: 50px
+    .h42
+        font-size: 36px
+    .h40
+        font-size: 32px
+    .h36
+        font-size: 30px
+    .h30
+        font-size: 26px
+    .h26
+        font-size: 22px
+    .h24
+        font-size: 20px
+    .h22
+        font-size: 20px
+    .h20
+        font-size: 16px
+
+    .inp-1
+        font-size: 18px
+    .but-1, .but-2
+        height: 60px
+        font-size: 18px
